@@ -1,0 +1,18 @@
+// Function for user signup
+function signup(userName) {
+  // Predefined list of usernames
+  let registeredUsers = ['john', 'alice', 'bob'];
+
+  // Check if the username is already registered
+  if (registeredUsers.includes(userName)) {
+    return "User Already Registered, Please Login";
+  } else {
+    // Add the new username to the array
+    registeredUsers.push(userName);
+    return "Signup Successful, Please Login";
+  }
+}
+
+// Example usage
+console.log(signup('john')); // "User Already Registered, Please Login"
+console.log(signup('mike')); // "Signup Successful, Please Login"
